@@ -15,6 +15,7 @@ const Home = ({data}) => {
                         <div className="box" key={id}>
                         <div className="image">
                             <img src={d.Image} alt="image1" />
+                            <span>{d.Guid}</span>
                         </div>
                         <div className="text">
                             <h2>{d.Name}</h2>

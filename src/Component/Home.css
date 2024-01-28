@@ -15,6 +15,17 @@
     padding: 20px;
     background-color: gray;
 }
+.image{
+    position: relative;
+    cursor: pointer;
+}
+.image span{
+    position: absolute;
+    color:rgb(12, 12, 232);
+    bottom: 5px;
+    right: 10px;
+    font-size: 15px;
+}
 .image img{
     width: 200px;
     height: 200px;
