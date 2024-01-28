@@ -1,0 +1,22 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background-color: black;
+}
+.container{
+    width: 100%;
+    padding:10px 60px;
+}
+.logo{
+    margin:20px 30px;
+}
+h1{
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+}
+.logo span{
+    color: red;
+}
