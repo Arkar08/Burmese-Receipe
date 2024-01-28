@@ -1,5 +1,6 @@
 import React from 'react'
 import './Home.css';
+import { Link } from 'react-router-dom';
 
 const Home = ({data}) => {
   return (
@@ -13,15 +14,17 @@ const Home = ({data}) => {
                 data.map((d,id)=>{
                     return(
                         <div className="box" key={id}>
-                        <div className="image">
-                            <img src={d.Image} alt="image1" />
-                            <span>{d.Guid}</span>
+                            <Link to={`/detail/${d.id}`}>
+                                <div className="image">
+                                    <img src={d.Image} alt="image1" />
+                                    <span>{d.Guid}</span>
+                                </div>
+                            </Link>
+                            <div className="text">
+                                <h2>{d.Name}</h2>
+                            </div>
                         </div>
-                        <div className="text">
-                            <h2>{d.Name}</h2>
-                        </div>
-                    </div>
-                    )
+                        )
                 })
             }
         </div>

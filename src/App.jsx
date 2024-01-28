@@ -4,7 +4,7 @@ import Home from './Component/Home'
 import axios from 'axios';
 import { BrowserRouter as Router,Routes,Route } from 'react-router-dom';
 import Detail from './Component/Detail';
-import Error from './Component/Error'
+import Error from './Component/Error';
 
 function App() {
 
